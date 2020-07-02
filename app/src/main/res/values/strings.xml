@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">CalculMoyenne V6</string>
+    <string name="nom">Matiere Name:</string>
+    <string name="note">Note :</string>
+    <string name="coefficient">Coefficient :</string>
+    <string name="dateTest">Date Test  :</string>
+    <string name="id">ID</string>
+
+    <string name="listeMatiere">Liste des matières</string>
+    <string name="ajouter">Ajouter</string>
+    <string name="modifier">Modifier</string>
+    <string name="supprimer">Supprimer</string>
+    <string name="actualiser">Actualiser</string>
+    <string name="quitter">Quitter</string>
+
+    <string name="pick">Date</string>
+
+    <string name="erreur2">Rien ajouter</string>
+    <string name="erreur3">ID introuvable !</string>
+    <string name="msg">Matiere supprimer</string>
+
+    <string name="valider">Valider</string>
+</resources>

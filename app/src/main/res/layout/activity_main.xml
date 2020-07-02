@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <Button
+            android:id="@+id/quitter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/result"
+            android:layout_alignParentBottom="false"
+            android:onClick="quitter"
+            android:text="@string/quitter" />
+
+        <Button
+            android:id="@+id/modifier"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/supprimer"
+            android:layout_alignParentBottom="false"
+            android:onClick="showDialog2"
+            android:text="@string/modifier"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/ajouter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/modifier"
+            android:layout_alignParentBottom="false"
+            android:layout_marginBottom="0dp"
+            android:onClick="showDialog"
+            android:text="@string/ajouter"
+            android:visibility="visible"
+            tools:text="@string/ajouter" />
+
+        <Button
+            android:id="@+id/supprimer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/actualiser"
+            android:layout_alignParentBottom="false"
+            android:layout_marginBottom="0dp"
+            android:onClick="showDialog3"
+            android:text="@string/supprimer"
+            android:visibility="visible"
+            tools:text="@string/supprimer" />
+
+        <Button
+            android:id="@+id/actualiser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/quitter"
+            android:layout_alignParentBottom="false"
+            android:layout_marginBottom="0dp"
+            android:onClick="actualiser"
+            android:text="@string/actualiser"
+            android:visibility="visible"
+            tools:text="@string/actualiser" />
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/listeMatiere"
+            android:textAllCaps="false"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif-light"/>
+
+        <LinearLayout
+            android:id="@+id/l"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/ajouter"
+            android:layout_below="@id/textView4"
+            android:layout_alignParentTop="false"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
+            android:orientation="horizontal">
+
+            <ScrollView
+                android:id="@+id/scroll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/show"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:textColor="@color/colorPrimary"
+                    android:paddingLeft="40dp"
+                    android:textSize="20dp"/>
+            </ScrollView>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
